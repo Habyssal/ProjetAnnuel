@@ -1,0 +1,22 @@
+name: HealCommand
+version: 1.0.0
+main: HealCommand\Main
+api: 5.0.0
+author: Habyss
+
+description: /heal (faim+Heal)
+
+commands:
+  heal:
+    description: heal le joueur (ou un autre).
+    usage: "/heal [joueur]"
+    aliases: [heal]
+    permission: heal.use
+
+permissions:
+  heal.use:
+    description: Permet d’utiliser /heal sur soi-même
+    default: true        # joueurs/Admin
+  heal.others:
+    description: Permet d’utiliser /heal <joueur>
+    default: op          # Admin
